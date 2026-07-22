@@ -11,3 +11,13 @@ const onProgress = (event) => {
   }
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
+
+const modelViewer = document.querySelector("model-viewer");
+modelViewer.addEventListener("load", () =>{
+  console.log(modelViewer.availableAnimations);
+});
+
+document.querySelector(".hotspot-pilz").addEventListener("click", () => {
+  modelViewer.animationName = "rechter ArmAction";
+  modelViewer.play
+});

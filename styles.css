@@ -1,6 +1,15 @@
 body{
   background-color: #60c1df;
 }
+
+.hotspot-pilz{
+  width: 40px;
+  height: 40px;
+  background: red;
+  border: 2px white;
+  border-radius: 50%;
+  cursor: pointer;
+}
 :not(:defined) > * {
   display: none;
 }
