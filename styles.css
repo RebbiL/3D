@@ -1,3 +1,6 @@
+body{
+  background-color: #60c1df;
+}
 :not(:defined) > * {
   display: none;
 }
@@ -16,7 +19,7 @@ body {
 model-viewer {
   width: 100%;
   height: 90%;
-  background-color: #ffffff;
+  background-color: #60c1df;
 }
 
 
