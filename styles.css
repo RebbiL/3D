@@ -3,12 +3,21 @@ body{
 }
 
 .hotspot-pilz{
-  width: 40px;
-  height: 40px;
-  background: red;
-  border: 2px white;
+  width: 10vw;
+  height: 10vw;
+  background: transparent;
+  border: none;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.sprechblase{
+  width: 10vw;
+  pointer-events: none;
+}
+
+.sprechblase.visible{
+  display: block;
 }
 :not(:defined) > * {
   display: none;

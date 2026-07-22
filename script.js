@@ -17,7 +17,11 @@ modelViewer.addEventListener("load", () =>{
   console.log(modelViewer.availableAnimations);
 });
 
-document.querySelector(".hotspot-pilz").addEventListener("click", () => {
+const hotspotButton = document.querySelector(".hotspot-pilz");
+const sprechblase = document.querySelector(".sprechblase");
+
+hotspotButton.addEventListener("click", () => {
   modelViewer.animationName = "rechter ArmAction";
   modelViewer.play
+  sprechblase.classList.add("visible");
 });
