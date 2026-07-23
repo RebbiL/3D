@@ -8,8 +8,18 @@
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
   </head>
   <body>
+     <model-viewer id="wolken" src="./Wolken/Wolken_zusammengefüg.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="Odeg 75deg 25%">
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>
     <!-- <model-viewer> HTML element -->
-    <!-- <model-viewer src="Wolken_zusammengefüg.glb" id="wolken" autoplay disable-zoom interaction-promt="none" shadow-intensity="1"></model-viewer>  -->
     <model-viewer src="ohneHintergrundHaus+Pilz.glb" id="vordergrund" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" animation-name="SurfSphere.001Action.002" autoplay>
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
@@ -27,6 +37,7 @@
       </button>
       <img src="Sprechblase.png" data-position="8 4 -0.89" alt="Herzlich willkommen auf meiner Website" class="sprechblase" slot="hotspot-pilz-text">
     </model-viewer>  
+
     
     <script src="./script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->

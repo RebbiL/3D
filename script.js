@@ -14,10 +14,6 @@ const onProgress = (event) => {
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 
 const modelViewer = document.querySelector("model-viewer");
-modelViewer.addEventListener("load", () =>{
-  console.log(modelViewer.availableAnimations);
-});
-
 const animation = ["SurfSphere.001Action.002", "rechter ArmAction"];
 let aktuellerIndex = 0;
 
