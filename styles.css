@@ -12,6 +12,7 @@ body{
 }
 
 .sprechblase{
+  display: none;
   width: 10vw;
   pointer-events: none;
 }

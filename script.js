@@ -17,11 +17,16 @@ modelViewer.addEventListener("load", () =>{
   console.log(modelViewer.availableAnimations);
 });
 
+const animation = ["SurfSphere.001Action.002", "rechter ArmAction"];
+let aktuellerIndex = 0;
+
 const hotspotButton = document.querySelector(".hotspot-pilz");
 const sprechblase = document.querySelector(".sprechblase");
 
 hotspotButton.addEventListener("click", () => {
-  modelViewer.animationName = "rechter ArmAction";
-  modelViewer.play
+  modelViewer.currentTime = 0;
+  modelViewer.animationName = animation[aktuellerIndex];
+  modelViewer.play();
   sprechblase.classList.add("visible");
+  aktuellerIndex = (aktuellerIndex +1)% animation.length
 });
