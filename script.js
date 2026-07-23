@@ -13,8 +13,8 @@ const onProgress = (event) => {
 
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 
-const modelViewer = document.querySelector("model-viewer");
-const animation = ["SurfSphere.001Action.002", "rechter ArmAction"];
+const modelViewer = document.querySelector("#vordergrund");
+const animation = ["rechter ArmAction","SurfSphere.001Action.002"];
 let aktuellerIndex = 0;
 
 const hotspotButton = document.querySelector(".hotspot-pilz");
@@ -26,4 +26,5 @@ hotspotButton.addEventListener("click", () => {
   modelViewer.play();
   sprechblase.classList.add("visible");
   aktuellerIndex = (aktuellerIndex +1)% animation.length
+  console.log( aktuellerIndex+"jhgjhg")
 });
