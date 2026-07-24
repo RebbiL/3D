@@ -19,6 +19,7 @@ let aktuellerIndex = 0;
 
 const hotspotButton = document.querySelector(".hotspot-pilz");
 const sprechblase = document.querySelector(".sprechblase");
+const sound = new Audio("./hintergrundmusik.mp3");
 
 hotspotButton.addEventListener("click", () => {
   modelViewer.currentTime = 0;
@@ -26,5 +27,14 @@ hotspotButton.addEventListener("click", () => {
   modelViewer.play();
   sprechblase.classList.add("visible");
   aktuellerIndex = (aktuellerIndex +1)% animation.length
-  console.log( aktuellerIndex+"jhgjhg")
+  sound.currentTime = 0;
+  sound.play().catch(error => {
+    console.error("The sound could not be played:", error);
+  });
+});
+
+
+
+modelViewer.addEventListener("click", () => {
+
 });
