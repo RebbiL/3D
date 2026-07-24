@@ -54,7 +54,7 @@ a:link{
 
 video{
     position: absolute;
-
+    width: 80vw;
     margin-top: 12vh;
     margin-left: 10vw;
     margin-bottom: 12vh;
