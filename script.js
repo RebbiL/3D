@@ -33,8 +33,3 @@ hotspotButton.addEventListener("click", () => {
   });
 });
 
-
-
-modelViewer.addEventListener("click", () => {
-
-});
